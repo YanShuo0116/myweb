@@ -1,0 +1,155 @@
+/* 基本重置和全局樣式 */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+    padding: 20px;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1.5rem 0;
+    text-align: center;
+    margin-bottom: 30px;
+    border-radius: 8px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+}
+
+section {
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eee;
+}
+
+section:last-child {
+    border-bottom: none;
+}
+
+h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 25px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #4a90e2; /* 主題色 */
+}
+
+h3 {
+    font-size: 1.5rem;
+    color: #444;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+h4 {
+    font-size: 1.2rem;
+    color: #555;
+    margin-top: 15px;
+    margin-bottom: 8px;
+}
+
+p {
+    margin-bottom: 15px;
+    color: #555;
+}
+
+a {
+    color: #4a90e2;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* 特色項目樣式 */
+.feature-item {
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #fdfdfd;
+    border: 1px solid #eaeaea;
+    border-radius: 6px;
+}
+
+/* style.css */
+pre {
+    /* background-color: #2d2d2d; */ /* 由 Prism 主題控制 */
+    /* color: #f8f8f2; */       /* 由 Prism 主題控制 */
+    padding: 20px;
+    border-radius: 5px;
+    overflow-x: auto;
+    font-family: 'Consolas', 'Monaco', 'Menlo', monospace;
+    font-size: 0.9em;
+    line-height: 1.5;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    white-space: pre-wrap; /* 允許長行自動換行 */
+    word-wrap: break-word; /* 確保單詞在必要時斷開 */
+}
+
+code {
+    font-family: 'Consolas', 'Monaco', 'Menlo', monospace;
+}
+
+/* 影片樣式 */
+video {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    background-color: #000; /* 影片背景，以防poster圖未加載 */
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding: 20px 0;
+    color: #777;
+    font-size: 0.9em;
+}
+
+/* 響應式調整 */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+    header h1 {
+        font-size: 2rem;
+    }
+    main {
+        padding: 20px;
+    }
+    h2 {
+        font-size: 1.8rem;
+    }
+    h3 {
+        font-size: 1.3rem;
+    }
+    pre {
+        font-size: 0.85em;
+        padding: 15px;
+    }
+}
